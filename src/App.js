@@ -19,7 +19,7 @@ firebase.initializeApp({
   measurementId: "G-NQTVFXE8V9"
 })
 
-const auth = firebase.auth();
+var auth = firebase.auth();
 const firestore = firebase.firestore();
 const analytics = firebase.analytics();
 
@@ -27,6 +27,8 @@ const analytics = firebase.analytics();
 function App() {
 
   const [user] = useAuthState(auth);
+
+  alert('hello');
 
   return (
     <div className="App">
